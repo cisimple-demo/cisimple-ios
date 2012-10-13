@@ -379,6 +379,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cisimple/cisimple-Prefix.pch";
 				INFOPLIST_FILE = "cisimple/cisimple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cisimple/cisimple-Prefix.pch";
 				INFOPLIST_FILE = "cisimple/cisimple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -448,6 +450,7 @@
 				0A243A48158EBCB900C9CCCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A243A49158EBCB900C9CCCC /* Build configuration list for PBXNativeTarget "cisimpleTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +459,7 @@
 				0A243A4B158EBCB900C9CCCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
