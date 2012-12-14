@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0B9200167AFA1900E4CB8D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B91FF167AFA1900E4CB8D /* Crashlytics.framework */; };
 		0A243A15158EBCB800C9CCCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A243A14158EBCB800C9CCCC /* UIKit.framework */; };
 		0A243A17158EBCB800C9CCCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A243A16158EBCB800C9CCCC /* Foundation.framework */; };
 		0A243A19158EBCB900C9CCCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A243A18158EBCB800C9CCCC /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0B91FF167AFA1900E4CB8D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0A243A10158EBCB800C9CCCC /* cisimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cisimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A243A14158EBCB800C9CCCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A243A16158EBCB800C9CCCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,6 +68,7 @@
 				0A243A15158EBCB800C9CCCC /* UIKit.framework in Frameworks */,
 				0A243A17158EBCB800C9CCCC /* Foundation.framework in Frameworks */,
 				0A243A19158EBCB900C9CCCC /* CoreGraphics.framework in Frameworks */,
+				0A0B9200167AFA1900E4CB8D /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +107,7 @@
 		0A243A13158EBCB800C9CCCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A0B91FF167AFA1900E4CB8D /* Crashlytics.framework */,
 				0A243A14158EBCB800C9CCCC /* UIKit.framework */,
 				0A243A16158EBCB800C9CCCC /* Foundation.framework */,
 				0A243A18158EBCB800C9CCCC /* CoreGraphics.framework */,
@@ -167,6 +171,7 @@
 				0A243A0C158EBCB800C9CCCC /* Sources */,
 				0A243A0D158EBCB800C9CCCC /* Frameworks */,
 				0A243A0E158EBCB800C9CCCC /* Resources */,
+				0A0B91FE167AFA0600E4CB8D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -246,6 +251,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A0B91FE167AFA0600E4CB8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 753631d5bda61537e20d7901909916c9c25e6fdf";
+		};
 		0A243A32158EBCB900C9CCCC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +396,10 @@
 		0A243A47158EBCB900C9CCCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cisimple/cisimple-Prefix.pch";
 				INFOPLIST_FILE = "cisimple/cisimple-Info.plist";
@@ -390,6 +412,10 @@
 		0A243A48158EBCB900C9CCCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cisimple/cisimple-Prefix.pch";
 				INFOPLIST_FILE = "cisimple/cisimple-Info.plist";
