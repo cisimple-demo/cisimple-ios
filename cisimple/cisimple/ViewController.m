@@ -35,7 +35,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[Crashlytics sharedInstance] crash];
 }
 
 - (void)viewDidAppear:(BOOL)animated
