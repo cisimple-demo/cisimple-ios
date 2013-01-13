@@ -5,8 +5,7 @@
 //  Created by Kevin Rohling on 6/17/12.
 //  Copyright (c) 2012 card.io. All rights reserved.
 //
-//
-//
+// This is a comment
 
 #import "ViewController.h"
 #import <Crashlytics/Crashlytics.h>
